@@ -1,0 +1,147 @@
+/* -------设置字体------ */
+/* ---------------------
+	代码字体：'Comic Sans MS'
+	中文字体：'DFKai-SB'
+--------------------- */
+
+p{
+	font-family: 'Comic Sans MS';
+	font-family: 'DFKai-SB';
+}
+/* 所有的设置此样式属性 */
+*{
+	margin:0;
+	padding:0;
+	border:0;
+	}
+
+/* html标签属性 */
+html{ 
+	min-width: 996px;
+	background: #f6f6f6;
+	overflow:scroll;
+	overflow-x:hidden;
+	}
+
+/* 正式内容的大封装 */
+div#wrapper{
+	margin: 0 auto;
+	width: 1129px;
+	text-align: left;
+	}
+
+/* header部分 */
+div#header{
+	margin: 0 0 0 12px;
+	width: 1100px;
+	height: 54px;
+	background-color: #a0a0a0;
+	font-size: 32px;
+	font-weight: 900;
+	color: white;
+	padding-top: 12px;
+	padding-left: 2px;
+	}
+
+/* a的连接部分，（未访问、已访问、获取焦点、按下的状态） */
+a:link, a:visited{
+	text-decoration: underline;
+	color: #900b09;
+	background: transparent;
+	}
+
+a:hover{
+	text-decoration : underline;
+	color: #ff0000;
+	background : transparent; 
+	}
+
+a:active{
+	text-decoration : underline;
+	color : #ff0000;
+	background : transparent;  
+	}
+
+/* left部分 */
+div#left{
+	float: left;
+	margin: 12px 12px 0 6px;
+	width: 180px;
+	background: transparent;
+	}
+
+div.nav{
+	margin-top: -12px;
+}
+
+div#left h2{
+	margin: 10px 0 0 12px;
+	}
+
+div#left ul{
+	margin-left: 12px;
+	}
+
+div#left li{
+	margin-top: 1px;
+	list-style: none;
+	}
+
+div#left a:link, div#left a:visited{
+	text-decoration: none;
+	color: #000;
+	background: transparent;
+	} 
+
+div#left a:hover{
+	text-decoration: underline;
+	color: #ff0000;
+	background: transparent;
+	cursor: pointer;
+	}
+
+div#left a:active{
+	text-decoration: underline;
+	color: #ff0000;
+	background: transparent;
+	}
+
+/* maincontent部分 */
+div#maincontent{
+	float: left;
+	width: 740px;
+	background: transparent;
+	}
+
+div#maincontent h1{
+	margin:15px 0 0 15px;
+	}
+
+div.content dl{
+	margin: 10px 0 0 0;
+	}
+
+div.content dt{
+	margin:15px 0 5px 0;
+	}
+
+div#maincontent	div{
+	width: 710px;
+	margin: 0 0 0 15px;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	}
+
+pre{
+	width:685px;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	border: 1px dotted #785;
+	background: #f5f5f5;
+	}
+
+/* right部分 */
+div#right{
+	margin:15px 0 15px 5px;
+	}
