@@ -5,15 +5,15 @@
 	<link rel="icon" href="image/icon.ico" type="image/x-ico" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<title>学习笔记</title>
 </head>
 
-<body class="html" id="cssref">
+<body class="html" onload="bodyonload()">
 <!-- 总内容 -->
 <div id="wrapper">
 <!-- 页头 -->
-<div id="header">多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 ——毛泽东</div>
+<div id="header" value="0">多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 ——毛泽东</div>
 
 <!-- 左边 -->
 <div id="left">
@@ -21,41 +21,36 @@
 	<div class="nav">
 	<h2>C#</h2>
 		<ul>
-		<li><a onclick="hlinkonclick(this)">基本变量</a></li>
-		<li><a title="流程控制">流程控制</a></li>
-		<li><a title="继承 多态">继承 多态</a></li>
+		<li><a style="color:red" class="liahref" onclick="urlonclick('book/c-sharp/0.html',this)">基本变量</a></li>
+		<li><a class="liahref" onclick="urlonclick('book/c-sharp/1.html',this)">基本变量</a></li>
 		</ul>
 	</div>
 
 	<div class="nav">
-	<h2>C#</h2>
+	<h2>Unity</h2>
 		<ul>
-		<li><a onclick="hlinkonclick('基本变量')">基本变量</a></li>
-		<li><a title="流程控制">流程控制</a></li>
-		<li><a title="继承 多态">继承 多态</a></li>
+		<li><a class="liahref" onclick="urlonclick('book/unity/unity_0001.html')">创建场景</a></li>
 		</ul>
 	</div>
 </div>
 
+
 <!-- 居中内容 -->
 <div id="maincontent">
-<!-- 居中内容标题 -->
-<h1>基本变量</h1>
-
-<!-- 一个居中内容小段落 -->
-<div class="content">
-<!-- 居中内容小段落的标题 -->
-<h2>1111</h2>
-<!-- 居中内容小段落的普通列表 -->
-<dl>
-<dt><a target="_blank" href="#">123</a></dt>
-<dd>123</dd>
-</dl>
-</div>
+<iframe id="iframe" src="book/c-sharp/0.html" frameborder="0" scrolling="no" onload="iframeonload(this)"></iframe>
 </div>
 
 <!-- 右侧部分 -->
-<div id="right">Search</div>
+<div id="right">
+<span>Search:</span><input value=""></input>
+</div>
+
+<div id="footer" hidden="hidden">
+<p>
+本站所有内容仅供学习，我们不保证内容的正确性。对任何法律问题及风险不承担任何责任。
+当使用本站时，代表您已接受了本站的<a title="关于使用">使用条款</a>和<a title="关于隐私">隐私条款</a>。版权所有，保留一切权利。
+</p>
+</div>
 
 </div>
 

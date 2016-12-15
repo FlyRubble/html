@@ -4,10 +4,10 @@
 	中文字体：'DFKai-SB'
 --------------------- */
 
-p{
+/*
 	font-family: 'Comic Sans MS';
 	font-family: 'DFKai-SB';
-}
+*/
 /* 所有的设置此样式属性 */
 *{
 	margin:0;
@@ -16,31 +16,38 @@ p{
 	}
 
 /* html标签属性 */
-html{ 
+.html{
 	min-width: 996px;
-	background: #f6f6f6;
+	background: #f9f9f9;
 	overflow:scroll;
 	overflow-x:hidden;
 	}
 
-/* 正式内容的大封装 */
+body{
+		font-family:Verdana, Arial, '宋体';
+	}
+
+/* 封装体 */
 div#wrapper{
 	margin: 0 auto;
-	width: 1129px;
+	width: 1128px;
 	text-align: left;
+	background-color: white;
+	box-shadow: 3px 0px 5px #cfcfcf;
 	}
 
 /* header部分 */
 div#header{
-	margin: 0 0 0 12px;
+	margin: 0 auto;
 	width: 1100px;
 	height: 54px;
-	background-color: #a0a0a0;
+	background-color: #b6b6b6;
 	font-size: 32px;
 	font-weight: 900;
 	color: white;
 	padding-top: 12px;
 	padding-left: 2px;
+	font-family: "Verdana";
 	}
 
 /* a的连接部分，（未访问、已访问、获取焦点、按下的状态） */
@@ -59,27 +66,33 @@ a:hover{
 a:active{
 	text-decoration : underline;
 	color : #ff0000;
-	background : transparent;  
+	background : transparent;
 	}
 
 /* left部分 */
 div#left{
 	float: left;
-	margin: 12px 12px 0 6px;
 	width: 180px;
-	background: transparent;
+	height: 300px;
+	margin-left: 13px;
+	background-color: #efefef;
 	}
 
 div.nav{
-	margin-top: -12px;
+	margin: 2px 9px 0 8px;
+}
+
+div.nav:first-child{
+	margin-top: 12px;
 }
 
 div#left h2{
-	margin: 10px 0 0 12px;
+	font-size: 14px;
+	font-family: bold;
 	}
 
 div#left ul{
-	margin-left: 12px;
+	font-size: 12px;
 	}
 
 div#left li{
@@ -89,7 +102,7 @@ div#left li{
 
 div#left a:link, div#left a:visited{
 	text-decoration: none;
-	color: #000;
+	color: red;
 	background: transparent;
 	} 
 
@@ -109,24 +122,35 @@ div#left a:active{
 /* maincontent部分 */
 div#maincontent{
 	float: left;
-	width: 740px;
-	background: transparent;
+	width: 752px;
+	height: 300px;
 	}
 
-div#maincontent h1{
-	margin:15px 0 0 15px;
+#iframe{
+	padding-left: 2px;
+	width: 750px;
+}
+
+h1.title{
+	margin:12px 0 0 15px;
+	font-size: 24px;
+	}
+
+div.content h2{
+	font-size: 16px;
 	}
 
 div.content dl{
+	font-size: 12px;
 	margin: 10px 0 0 0;
 	}
 
 div.content dt{
-	margin:15px 0 5px 0;
+	margin: 15px 0 5px 0;
 	}
 
-div#maincontent	div{
-	width: 710px;
+div.content{
+	width: 737px;
 	margin: 0 0 0 15px;
 	padding: 20px 0 20px 0;
 	border-top: 1px solid #aaa;
@@ -143,5 +167,40 @@ pre{
 
 /* right部分 */
 div#right{
-	margin:15px 0 15px 5px;
+	float: left;
+	width: 168px;
+	margin:0px 0 15px 2px;
+	background-color: #efefef;
 	}
+
+div#right input{
+	width: 100px;
+	height: 16px;
+	border: 1px solid #999;
+	margin: 12px 0 0 8px;
+	}
+
+div#right span{
+	font-family: "Comic Sans MS";
+	font-size: 12px;
+	margin: 12px 0 0 6px;
+	}
+/* footer部分 */
+div#footer{
+	float: left;
+	width: 1104px;
+	height: 32px;
+	margin: -13px 0 0 12px;
+	background-color: #c6c6c6;
+}
+
+#footer p{
+	margin: 8px 0 0 6px;
+	font-size: 13px;
+}
+
+#footer p a{
+	text-decoration: underline;
+	cursor: pointer;
+	color: red;
+}
