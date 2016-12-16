@@ -14,7 +14,7 @@ function iframeonload(arg0) {
 	arg0.height=1;
 	arg0.height=arg0.contentWindow.document.body.scrollHeight;
 
-	var height=(window.innerHeight-54)>arg0.height?window.innerHeight:arg0.height;
+	var height=Math.max(window.innerHeight-54,arg0.height);
 	
 	var element=document.getElementById("left");
 	element.style.height=height+"px";
@@ -22,7 +22,7 @@ function iframeonload(arg0) {
 	element=document.getElementById("right");
 	element.style.height=height+"px";
 
-	var element=document.getElementById("wrapper");
+	element=document.getElementById("wrapper");
 	element.style.height=(Number(height)+102)+"px";
 }
 
@@ -33,10 +33,10 @@ function bodyonload () {
 
 function remaintime(){
 	var array=new Array()
-	array[0] = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。 ——毛泽东";
-	array[1] = "业精于勤，荒于嬉；行成于思，毁于随。——韩愈";
-	array[2] = "伟大的事业，需要决心，能力，组织和责任感。　——易卜生";
-	array[3] = "读书是易事，思索是难事，但两者缺一，便全无用处。——富兰克林";
+	array[0] = "多少事，从来急；天地转，光阴迫。一万年太久，只争朝夕。";
+	array[1] = "业精于勤，荒于嬉；行成于思，毁于随。";
+	array[2] = "伟大的事业，需要决心，能力，组织和责任感。";
+	array[3] = "读书是易事，思索是难事，但两者缺一，便全无用处。";
 
 	var element=document.getElementById("header");
 	do{
