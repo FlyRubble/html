@@ -1,13 +1,13 @@
-function urlonclick (arg0, arg1) {
+function urlonclick (arg0) {
 	var element=document.getElementById("iframe");
-	element.setAttribute("src", arg0);
+	element.setAttribute("src", arg0.getAttribute("value"));
 
 	var tags=document.getElementsByClassName("liahref");
 	for (var i = 0; i < tags.length; i++)
 	{
 		tags[i].style.color="black";
 	}
-	arg1.style.color="red";
+	arg0.style.color="red";
 }
 
 function iframeonload(arg0) {
@@ -24,11 +24,36 @@ function iframeonload(arg0) {
 
 	element=document.getElementById("wrapper");
 	element.style.height=(Number(height)+102)+"px";
+
+	element=document.getElementById("left");
+	if(element.scrollHeight>element.clientHeight||element.offsetHeight>element.clientHeight){
+		element.style.overflowY="scroll";
+	}else{
+		element.style.overflowY="hidden";
+	}
 }
 
 function bodyonload () {
 	$("#footer").show();
 	setTimeout("remaintime()",60000);
+
+	var tags=document.getElementsByClassName("liahref");
+	var url = document.URL.split('?');
+	var index = 0;
+	if (typeof(url[1]) != "undefined"){
+		for (var i = 0; i < tags.length; i++)
+		{
+			/* 
+			decodeURI() 解码
+			encodeURI() 编码
+			*/
+			if (tags[i].innerHTML == decodeURI(url[1])){
+				index = i;
+				break;
+			}
+		}
+	}
+	urlonclick(tags[index]);
 }
 
 function remaintime(){

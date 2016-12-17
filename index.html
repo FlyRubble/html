@@ -21,15 +21,15 @@
 	<div class="nav">
 	<h2>C#</h2>
 		<ul>
-		<li><a style="color:red" class="liahref" onclick="urlonclick('book/c-sharp/0.html',this)">基本变量</a></li>
-		<li><a class="liahref" onclick="urlonclick('book/c-sharp/1.html',this)">基本变量</a></li>
+		<li><a class="liahref" value="book/c-sharp/0.html" onclick="urlonclick(this)">基本变量1</a></li>
+		<li><a class="liahref" value="book/c-sharp/1.html" onclick="urlonclick(this)">定义</a></li>
 		</ul>
 	</div>
 
 	<div class="nav">
 	<h2>Unity</h2>
 		<ul>
-		<li><a class="liahref" onclick="urlonclick('book/unity/unity_0001.html')">创建场景</a></li>
+		<li><a class="liahref" value="book/unity/0.html" onclick="urlonclick(this)">创建场景</a></li>
 		</ul>
 	</div>
 </div>
@@ -37,7 +37,7 @@
 
 <!-- 居中内容 -->
 <div id="maincontent">
-<iframe id="iframe" src="book/c-sharp/0.html" frameborder="0" scrolling="no" onload="iframeonload(this)"></iframe>
+<iframe id="iframe" src="" frameborder="0" scrolling="no" onload="iframeonload(this)"></iframe>
 </div>
 
 <!-- 右侧部分 -->
