@@ -139,21 +139,47 @@ div#maincontent{
 
 h1.title{
 	margin:12px 0 0 15px;
-	font-size: 24px;
+	font-size: 18px;
+	font-weight: normal;
 	}
 
 div.content h2{
-	font-size: 16px;
+	font-size: 12px;
+	color: #9f0050;
+	font-weight: normal;
+	}
+
+dd{
+	text-indent: 2em;
+	}
+
+dd span{
+	text-decoration: none;
+	color: blue;
+	}
+
+dd a{
+	text-decoration: underline;
+	color: #6c6c6c;
 	}
 
 div.content dl{
 	font-size: 12px;
-	margin: 10px 0 0 0;
+	margin: 10px 10px 0 0;
+	line-height: 1.6em;
+	}
+
+a.blue{
+	color: #136ec2;
 	}
 
 div.content dt{
 	margin: 15px 0 5px 0;
 	}
+
+dd.dds{
+	margin-top: 0.8em;
+}
 
 div.content{
 	width: 737px;
