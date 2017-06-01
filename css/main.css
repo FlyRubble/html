@@ -1,0 +1,126 @@
+		* {
+			border: 0px;
+			margin: 0px;
+			padding: 0px;
+		}
+		body {
+			background-image:url('../image/bg0.jpg');
+			background-position:center; 
+			background-repeat:repeat-y;
+			opacity: 1;
+		}
+		#top {
+			background-color: #363636;
+		}
+		#icon {
+			position:absolute;
+			left: 23px;
+			margin-top: 5px;
+			font-size: 35px;
+			font-family: "黑体";
+			color: white;
+		}
+		#iword {
+			position:absolute;
+			left: 128px;
+			top: 24px;
+			font-size: 1em;
+			//font-family: "黑体";
+			color: white;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+		#cc {
+			position:absolute;
+			margin-top: 21px;
+			background: yellow;
+			width: 8px;
+			height: 6px;
+			border-radius: 42%;
+		}
+        #left {
+            position:absolute;
+            overflow: auto;
+            text-align: left;
+            background: #eeeeee;
+			border:1px solid #dedede;
+            border-radius: 5px;
+            box-shadow: 0px 0px 12px #dddddd;
+        }
+		#left .a {
+			font-weight: 600;
+			list-style: none;
+			margin-left: 0.3em;
+            font-size: 0.9em;
+		}
+		#left .b {
+			font-weight: 500;
+			list-style: none;
+			margin-left: 2.3em;
+            font-size: 0.8em;
+		}
+		#left .b a {
+			text-decoration:none;
+		}
+		#left .c {
+			font-weight: 500;
+			list-style: none;
+			margin-left: 2.3em;
+            font-size: 0.8em;
+		}
+		#left .c a {
+			text-decoration:none;
+			color: red;
+		}
+        #center {
+            position:absolute;
+            overflow: auto;
+            left: 226px;
+            background: #eeeeee;
+			border:1px solid #dedede;
+            border-radius: 5px;
+            box-shadow: 0px 0px 12px #dddddd;
+        }
+        #right {
+            position:absolute;
+            right: 20px;
+            height: 400px;
+            width: 256px;
+            background: #eeeeee;
+			border:1px solid #dedede;
+            border-radius: 5px;
+            box-shadow: 0px 0px 12px #dddddd;
+        }
+        #bottom {
+            position:absolute;
+            left: 3px;
+            background: #e3e3e3;
+            border-radius: 3px;
+            box-shadow: 0px 0px 9px #f0f0f0;
+            text-align: center;
+            font-size: 0.8em;
+        }
+        ::-webkit-scrollbar {
+		}
+		div#left::-webkit-scrollbar{width:4px;border-radius: 1px;}
+		div#left::-webkit-scrollbar-track{background-color:#dedede;}
+		div#left::-webkit-scrollbar-thumb{background-color:#afafaf;}
+		
+		div#center::-webkit-scrollbar{width:4px;border-radius: 1px;}
+		div#center::-webkit-scrollbar-track{background-color:#dedede;}
+		div#center::-webkit-scrollbar-thumb{background-color:#afafaf;}
+		
+/* right部分 */
+div#right input{
+	width: 169px;
+	height: 16px;
+	border: 1px solid #999;
+	margin: 12px 0 0 8px;
+	}
+
+div#right span{
+	font-family: "Comic Sans MS";
+	font-size: 12px;
+	margin: 12px 0 0 6px;
+	}
