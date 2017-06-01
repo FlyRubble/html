@@ -18,7 +18,7 @@ function bodyonload() {
 	// 设置布局
 	setlayout();
 	
-	//setTimeout("remaintime()",60);
+	setTimeout("remaintime()",60);
 }
 
 function setlayout() {
